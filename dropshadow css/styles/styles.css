@@ -1,0 +1,59 @@
+html, body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Karla', sans-serif;
+	background: linear-gradient(to bottom, #ff8a8a 0%, #ca6e92 100%);
+}
+
+p {
+	line-height: 160%;
+	color: #fff;
+}
+
+
+h1 {
+    font-size: 150px;
+		color: #fff;
+		font-family: 'Belleza';
+		font-weight: normal;
+		margin-bottom: 100px;
+}
+
+img {
+    width: 400px;
+    position: fixed;
+    top: -200px;
+    z-index: 2;
+    transform: rotate(104deg);
+    transform-origin: center center;
+    filter: drop-shadow(4px 18px 0px #63d8c5);
+ /*animation:*/
+ animation-name: drop-shadow;
+    animation-direction: alternate;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+
+.container {
+    width: 50%;
+		min-width: 400px;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes drop-shadow{
+	0%{
+		filter: drop-shadow(4px 10px 3px rgba(0, 0, 0, 0.3));
+
+	}
+	100%{
+		filter: drop-shadow(34px 10px 6px rgba(0, 0, 0, 0.3));
+
+	}
+}
